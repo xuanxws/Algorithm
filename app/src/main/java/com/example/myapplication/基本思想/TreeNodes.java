@@ -56,7 +56,7 @@ public class TreeNodes {
      public void preOrderTraveralWithStack(TreeNode root) {
          Stack<TreeNode> stack = new Stack<>();
          TreeNode node = root;
-         while (null != root || !stack.isEmpty()) {
+         while (null != node || !stack.isEmpty()) {
              while (node != null) {
                  System.out.println(node.val);
                  stack.push(node);
@@ -77,7 +77,7 @@ public class TreeNodes {
     public void middleOrderTraversal(TreeNode root) {
          Stack<TreeNode> stack = new Stack<>();
          TreeNode node = root;
-         while (null != root || !stack.isEmpty()) {
+         while (null != node || !stack.isEmpty()) {
              while (node != null) {
                  stack.push(node);
                  node = node.left;
@@ -103,7 +103,7 @@ public class TreeNodes {
         Stack<TreeNode> res = new Stack<>();
 
         TreeNode node = root;
-        while (node != null && !stack.isEmpty()) {
+        while (node != null || !stack.isEmpty()) {
             while (node != null) {
                 res.push(node);
                 stack.push(node);

@@ -1,10 +1,11 @@
-package com.example.myapplication.leetcode;
+package com.example.myapplication.leetcode.数据结构;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 public class TestOne {
+
 
     public List<List<Integer>> threeSum(int[] nums) {
          List<List<Integer>> lists = new ArrayList<>();
